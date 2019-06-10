@@ -1,0 +1,25 @@
+countries = DataSet['countries'].values
+c = set(countries)
+countries = list(c)
+countries.sort()
+
+THS = pd.read_csv('2007.csv')
+NEW = pd.DataFrame(THS.sort_values('Country Name'))
+NEW.reset_index(inplace=True)
+NEW = NEW.drop('index',axis=1)
+
+THS = pd.read_csv('2007.csv')
+NEW = pd.DataFrame(THS.sort_values('Country Name'))
+NEW.reset_index(inplace=True)
+NEW = NEW.drop('index',axis=1)
+j = 0
+for i in range(0,264):
+    print(NEW['Country Name'][i], " == ", countries[j])
+    if NEW['Country Name'][i] == countries[j]:
+        variation2008[j] = (NEW['2008'][i]/NEW['2007'][i])-1
+        if variation2008[j] > 1.0:
+            variation2008[j] = ( (NEW['2008'][i]/1000) /NEW['2007'][i] )-1
+        if variation2008[j] < -0.5:
+            variation2008[j] = ( NEW['2008'][i] /( NEW['2007'][i]/1000) )-1
+        j += 1;
+
