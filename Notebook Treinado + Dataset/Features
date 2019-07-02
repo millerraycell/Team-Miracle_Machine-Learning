@@ -55,8 +55,8 @@ pf_identity_sex_female  Female-to-female_relationships
 pf_identity_sex  Same-sex_ralitionships
 pf_identity_divorce  Divorce
 pf_identity  Identity_and_relationships
-pf_score  Personal_Freedom_(score)
-pf_rankP  ersonal_Freedom_(rank)
+pf_score Personal_Freedom_(score)
+pf_rank Personal_Freedom_(rank)
 ef_government_consumption  Government_consumption
 ef_government_transfers  Transfers_and_subsidies
 ef_government_enterprises  Government_enterprises_and_investments
@@ -85,7 +85,7 @@ ef_trade_tariffs_mean  Mean_tariff_rate
 ef_trade_tariffs_sd  Standard_deviation_of_tariffs_rates
 ef_trade_tariffs  Tariffs
 ef_trade_regulatory_nontariff  Nontariff_trade_barriers
-ef_trade_regulatory_compliance  Compliance_costs_of_importing_and_exporting
+ef_trade_regulatory_compliance  Costs_of_importing_and_exporting
 ef_trade_regulatory  Regulatory_trade_barriers
 ef_trade_black  Black-market_exchange_rates
 ef_trade_movement_foreign  Foreign_ownership/investment_restrictions
